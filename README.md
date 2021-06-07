@@ -1,2 +1,18 @@
-# WebManager
-How to make ECX3.3 WebManager running on today's Windows
+# How to start ECX3.x WebManager on today's Windows
+
+ECX3.x WebManager is imprelemted as Java Applet. Oracle and MS had given up to support Java Applet and IE. 
+This document describes just the procedure for running ECX WebManager on today's Windows without IE. 
+
+1. Download Java7 (32bit) from [Oracle](https://www.oracle.com/java/technologies/javase/javase7-archive-downloads.html) and install it on WS2019 with default options.
+2. Open [ Configure Java ] in Windows Start menu
+	1. Goto [ Security ] tab
+	2. Select [ Medium ] for [ Security Level ]
+	3. [ OK ]
+3. Open Windows command prompt then issue the follows
+
+		cd "\Program Files (x86)\Java\jre7\bin"
+		javaws.exe http://localhost:29003/main.jnlp
+
+4. [ Security Warning ] dialogue is opend
+5. Make [ I accept the risk and want to run this application. ] checked
+6. [ Run ]
