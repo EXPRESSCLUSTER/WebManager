@@ -26,4 +26,4 @@ On Linux, *Icedtea* could be used for starting ECX3.x WebManager.
 The following command sample was validated on Ubuntu 20.04
 
 	apt install icedtea-netx
-	javaws http://localhost:29003/main.hnlp
+	javaws http://localhost:29003/main.jnlp
